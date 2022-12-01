@@ -3,7 +3,7 @@
 /// This function returns a string based on a key and locale.
 ///
 /// @param {String} _key The unique key of the string in your localization file.
-/// @param {Real} _locale The locale to localize the string within. Defaults to locale_get()
+/// @param {Real} _locale The locale index to localize the string within. Defaults to locale_get()
 /// @returns {String}
 function localize(_key, _locale = global.__gmlocale_localization_current_locale){
 	

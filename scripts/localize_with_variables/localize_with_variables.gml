@@ -1,10 +1,10 @@
 // Feather ignore GM2017
 
-/// This function returns a string based on a key and locale and inserts a variables from a struct.
+/// This function returns a string based on a key and locale and inserts variables from a struct.
 /// For example, the struct {prof: "Dr.", name: "Alan"} would populate the string "Hello, I am {prof} {name}".
 ///
 /// @param {String} _key The unique key of the string in your localization file.
-/// @param {Struct} _struct The struct containing variables to insert.
+/// @param {Struct} _struct The struct containing variables to insert into the string..
 /// @param {Real} _locale The locale to localize the string within. Defaults to locale_get()
 /// @returns {String}
 function localize_with_variables(_key, _struct, _locale = global.__gmlocale_localization_current_locale){
