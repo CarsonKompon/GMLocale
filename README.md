@@ -9,6 +9,15 @@ Go to the [releases](https://github.com/CarsonKompon/GMLocale/releases) and down
 You can then drag the downloaded file into your project, or select `Tools > Import Local Package` from the toolbar at the top of GameMaker.
 Then find and select the downloaded file and import all from there.
 
+## Localization CSV Layout
+
+Here's an example as to how your localization file should be laid out (before encryption if you are using it)
+
+|  | English | Italiano |
+| :--- | :--- | :--- |
+| text_test | This is test dialogue. | Questo è il dialogo test. |
+| hud_test | Health: {x} | Punti Ferita: {x} |
+
 ---
 
 ## locale_init
