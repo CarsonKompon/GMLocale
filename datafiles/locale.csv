@@ -1,3 +1,4 @@
 ,English [en],Français [fr],Deutsch [de],Italiano [it]
 button_confirm,Confirm,Confirmer,Bestätigen,Confermare
 greeting_hello,Hello!,Bonjour!,Hallo!,Ciao!
+health_points,Health Points: {x},Points de vie: {x},Gesundheitspunkte: {x}, Punti salute: {x}

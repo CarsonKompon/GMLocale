@@ -15,3 +15,6 @@ draw_text(128, 152, locale_get_name() + ":");
 
 // "Confirm" text that's based on the current locale
 draw_text(128, 192, localize("button_confirm"));
+
+// Health points (also based on current locale but use a variable)
+draw_text(128, 224, localize_with_variable("health_points", healthPoints));
