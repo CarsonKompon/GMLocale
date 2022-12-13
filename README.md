@@ -25,12 +25,13 @@ Initializes GMLocale and loads the localization file into memory.
 
 #### Syntax
 ```js
-locale_init(_file, [_deobfuscationFunction]);
+locale_init(_file, [_columnsToIgnore], [_deobfuscationFunction]);
 ```
 
 | Argument | Type | Description |
 | :--- | :---: | :--- |
 | `_file` | String | The file to load (should be a csv, but can be parsed however you'd like through the next parameter) |
+| `_columnsToIgnore` | Array<Real> | An array of column indexes that should be skipped when reading the localization file. This is useful if you have additional column(s) that only serve as comments or explanations that shouldn't be loaded into the localization data. Defaults to `[]`|
 | `[_deobfuscationFunction]` | Function | The function used to deobfuscate the localization file. This is useful if the file is encrypted and you wish to decrypt it on load. Defaults to `function(_file){ return load_csv(_file); }` |
 
 #### Returns
