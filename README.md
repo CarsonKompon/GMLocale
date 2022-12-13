@@ -31,7 +31,7 @@ locale_init(_file, [_deobfuscationFunction]);
 | Argument | Type | Description |
 | :--- | :---: | :--- |
 | `_file` | String | The file to load (should be a csv, but can be parsed however you'd like through the next parameter) |
-| `[_deobfuscationFunction]` | Function | The function used to deobfuscate the localization file. This is useful if the file is encrypted and you wish to decrypt it on load. Defaults to `function(_file){ return load_csv(_file; }` |
+| `[_deobfuscationFunction]` | Function | The function used to deobfuscate the localization file. This is useful if the file is encrypted and you wish to decrypt it on load. Defaults to `function(_file){ return load_csv(_file); }` |
 
 #### Returns
 ```js
